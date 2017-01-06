@@ -1,0 +1,21 @@
+#Instalando ultima versao eclipse de forma manual. 
+
+-> Passo 1 : verifique se seu sistema e 64bits caso sim, use o comando 
+wget http://eclipse.c3sl.ufpr.br/technology/epp/downloads/release/neon/R/eclipse-jee-neon-R-linux-gtk-x86_64.tar.gz -O eclipse.tar.gz
+caso a versao acima tiver desatualizada acessar http://eclipse.c3sl.ufpr.br/technology/epp/downloads/release/
+
+
+-> Passo 2 : execute o comando abaixo para descompactar o pacote para a pasta /opt/;
+sudo tar -zxvf eclipse.tar.gz -C /opt/
+
+
+-> Passo 3 : Renomeie a pasta criada. Se ao executar o comando abaixo ocorrer um erro com a mensagem iniciando com “mv: é impossível sobrescrever o não-diretório”, pule este passo
+sudo mv /opt/eclipse*/ /opt/eclipse
+
+
+-> Passo 4 : baixe o icone
+sudo wget https://dl2.macupdate.com/images/icons128/11662.png -O /opt/eclipse/eclipse.png
+
+
+-> Passo 5 : criar um lançador para o programa, executando o comando abaixo;
+echo -e '[Desktop Entry]\n Version=1.0\n Name=eclipse\n Exec=/opt/eclipse/eclipse\n Icon=/opt/eclipse/eclipse.png\n Type=Application\n Categories=Application' | sudo tee /usr/share/applications/eclipse.desktop
