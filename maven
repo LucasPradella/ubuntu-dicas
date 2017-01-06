@@ -6,3 +6,8 @@ sudo apt-cache search maven
 
 passo 2 : para instalar execute 
 sudo apt-get install maven
+
+
+
+verifique usando o comando
+mvn -version
