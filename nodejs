@@ -1,0 +1,26 @@
+#Instalando NodeJS
+
+Para instalar a ultima versao do nodejs vamos seguir os seguintes passos (lembrando que esse e apenas uma forma de instalar).
+Utilizando um PPA
+
+passo 1 : O PPA precisa ser instalado de modo aobter acesso ao seu conteúdo. verifique se esta no diretório home
+cd ~
+curl -sL https://deb.nodesource.com/setup_6.x -o nodesource_setup.sh
+
+
+passo 2 : E execute o comando
+sudo bash nodesource_setup.sh
+
+
+passo 1 : para instalar o node execute
+sudo apt-get install nodejs
+
+
+
+passo 1 : O pacote nodejs contém o binário nodejs bem como o npm, para que alguns pacotes do
+npm funcionem você precisará instalar o pacote build-essential
+sudo apt-get install build-essential.
+
+
+para verificar a versao execute
+nodejs -v
