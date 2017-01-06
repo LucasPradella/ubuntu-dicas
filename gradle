@@ -1,0 +1,12 @@
+#instalando gradle
+
+passo 1 : adiciene repositorio gradle
+sudo add-apt-repository ppa:cwchien/gradle
+
+
+passo 2 : atualize
+sudo apt-get update
+
+
+passo 3 : instale gradle 
+sudo apt-get install gradle.
