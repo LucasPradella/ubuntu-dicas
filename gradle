@@ -10,3 +10,7 @@ sudo apt-get update
 
 passo 3 : instale gradle 
 sudo apt-get install gradle.
+
+
+verifique usando o comando
+gradle -v
