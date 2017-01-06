@@ -1,0 +1,8 @@
+#instalando maven
+
+paso 1 : para buscar todos os pacotes maven execute 
+sudo apt-cache search maven
+
+
+passo 2 : para instalar execute 
+sudo apt-get install maven
