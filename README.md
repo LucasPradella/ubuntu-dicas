@@ -1,4 +1,4 @@
-# ubuntu-dicas
+# ubuntu-utils
 
 
 Environment dedicated to the use of a ubuntu distro
