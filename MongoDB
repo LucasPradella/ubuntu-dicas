@@ -1,0 +1,25 @@
+Intalando MongoDB - Ubuntu 16.04 LTS 
+
+#importar Repositorio 
+	sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
+
+#comando para criar um arquivo de lista para o MongoDB
+echo "deb [ arch=amd64 ] http://repo.mongodb.org/apt/ubuntu precise/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list
+
+#atualizar lista
+	sudo apt-get update
+
+#comando para instalar mongoDB
+	sudo apt-get install -y mongodb-org
+
+
+	
+#iniciar serviço
+	sudo service mongod start
+
+#parar serviço
+	sudo service mongod stop
+
+#restart serviço
+	sudo service mongod restart	
+	
